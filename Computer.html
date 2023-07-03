@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer</title>
+    <script src="https://kit.fontawesome.com/e69a6cfb69.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            height: 80px;
+            width: 100%;
+            background-color: #0e0e3f;
+        }
+
+        .logo {
+            max-height: 58%;
+            max-width: 18%;
+            margin-left: 61px;
+            border-radius: 7px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        .navbar ul li {
+            list-style: none;
+
+            text-decoration: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 19px;
+        }
+
+        .navbar {
+            width: 500px;
+            margin-right: 100px;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-logo p {
+            color: yellow;
+            font-size: 30px;
+            padding-left: 20px;
+
+        }
+
+        .navbar ul li a i {
+            margin-right: 7px;
+        }
+
+        .outline {
+
+            border: 16px solid #FFC107;
+            background: #FFC107;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+
+            height: 80vh;
+            width: 100%;
+            /* border: 2px solid black; */
+        }
+
+        .left {
+            width: 40%;
+            height: 80vh;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            /* border: 2px solid black; */
+        }
+
+        .mid {
+            width: 73%;
+            height: 80vh;
+            margin-top: 50px;
+            /* border: 2px solid black; */
+        }
+
+        .right {
+
+            width: 10%;
+            height: 80vh;
+            /* border: 2px solid black; */
+
+        }
+
+        .mid-top {
+            height: 80px;
+            width: 100%;
+
+            background: #0d3c60d6;
+            /* border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mid-top p {
+            color: white;
+            font-size: 30px;
+            text-align: center;
+            font-style: arial;
+        }
+
+        .grid-container {
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .grid-container-2 {
+            width: 70%;
+            padding: 20px 20px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            /* Three equal columns */
+            grid-gap: 10px;
+            /* Gap between grid items */
+        }
+
+        .grid-item-2 {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        .left-top{
+            background-color: #0d3c60d6;
+            height: 40px;
+            width: 70%;
+            /* text-align: center; */
+            margin-top: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 2px;
+        }
+        .left-top p{
+            font-size: 20px;
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo">
+            <img src="EduSemester logo.png" alt="" class="logo">
+            <p>EduSemester</p>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house fa-lg outline"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-user fa-lg outline"></i>About</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone fa-lg outline"></i>Contact Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-gear fa-lg outline"></i>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="left-top">
+                <p>Miscellaneous</p>
+            </div>
+            <div class="grid-container-2">
+                <div class="grid-item-2">
+                    <p>Books</p>
+                </div>
+                <div class="grid-item-2">
+                    <p>Previous Year Questions</p>
+                </div>
+                <div class="grid-item-2">
+                    <p>Class Notes</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="mid">
+            <div class="mid-top">
+                <p>Computer</p>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <p>Introduction</p>
+                </div>
+                <div class="grid-item">
+                    <p>Logical Operation and Basic Gates</p>
+                </div>
+                <div class="grid-item">
+                    <p>Computer Organisation</p>
+                </div>
+                <div class="grid-item">
+                    <p>Problem Solving steps</p>
+                </div>
+                <div class="grid-item">
+                    <p>Introduction to C Programing</p>
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="right">
+
+        </div>
+    </div>
+</body>
+
+</html>
